@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Overflow Sort - SynaptechLabs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: sans-serif; line-height: 1.6; padding: 2rem; max-width: 800px; margin: auto; }
+    h1 { color: #0055aa; }
+    code { background: #f0f0f0; padding: 0.2em 0.4em; border-radius: 4px; }
+    footer { margin-top: 3rem; font-size: 0.9em; color: #888; }
+  </style>
+</head>
+<body>
+  <h1>⚡ Overflow Sort</h1>
+  <p><strong>Overflow Sort</strong> is a novel, high-performance sorting algorithm developed by <em>Scott Douglass</em> at <strong>SynaptechLabs</strong>.</p>
+
+  <p>It exploits integer overflow behavior on modern hardware to rapidly sort numeric arrays using only multiplication and bit-level effects, often outperforming traditional methods like <code>qsort</code> and even <code>radix sort</code> on specific workloads.</p>
+
+  <h2>🚀 Features</h2>
+  <ul>
+    <li>Hardware-efficient design (leverages native overflow)</li>
+    <li>SIMD/AVX variants for ultra-fast sorting</li>
+    <li>Includes full benchmark suite vs <code>qsort</code> and radix sort</li>
+    <li>MIT Licensed</li>
+  </ul>
+
+  <h2>📊 Benchmark Snapshot</h2>
+  <pre>
+10M integers sorted:
+  Overflow Sort:    0.68s
+  qsort (glibc):    1.08s
+  Radix Sort:       0.057s
+  </pre>
+
+  <p>Full source code, benchmarks, and documentation are available on <a href="https://github.com/SynaptechLabs/overflowSort" target="_blank">GitHub</a>.</p>
+
+  <footer>
+    &copy; 2025 SynaptechLabs • Follow us on <a href="https://twitter.com/SynaptechLabs" target="_blank">@SynaptechLabs</a>
+  </footer>
+</body>
+</html>
