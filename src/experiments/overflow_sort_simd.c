@@ -7,7 +7,6 @@
  * @license MIT
  */
 
-
 #include <immintrin.h>
 #include <stdbool.h>
 #include <stdint.h>
@@ -15,7 +14,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define SIZE 10000
+#define SIZE 100000
 #define THRESHOLD 65535
 #define MAX_ROUNDS 32
 
